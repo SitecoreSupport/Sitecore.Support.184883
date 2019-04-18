@@ -30,8 +30,8 @@
             if (mediaItemFromQueryString != null)
             {
                 this.DataSource.Parameters["RootItemId"] = mediaItemFromQueryString.ID.ToString();
-                // add the context language to parameters
-                this.DataSource.Parameters["Language"] = mediaItemFromQueryString.Language.Name;
+                // Display all language versions of media items
+                this.DataSource.Parameters["Language"] = string.Empty;
             }
             if (mediaItemFromQueryString == null)
             {
